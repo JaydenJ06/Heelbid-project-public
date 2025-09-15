@@ -10,8 +10,8 @@
 
 Welcome to HeelBid! A realtime auction website where users can buy and sell items!
 
-<img width="500" alt="Screenshot 2025-04-27 at 7 44 05 PM" src="https://github.com/user-attachments/assets/8baf701b-b939-47af-919a-3454cf1d8dbc" />
-<img width="500" alt="Screenshot 2025-04-27 at 7 44 30 PM" src="https://github.com/user-attachments/assets/0036b346-02f3-4fc9-bbeb-8c4a93c0c91d" />
+<img width="500" alt="Screenshot 2025-04-27 at 7 44 05 PM" src="https://github.com/user-attachments/assets/8baf701b-b939-47af-919a-3454cf1d8dbc" />
+<img width="500" alt="Screenshot 2025-04-27 at 7 44 30 PM" src="https://github.com/user-attachments/assets/0036b346-02f3-4fc9-bbeb-8c4a93c0c91d" />
 
 ## Features
 
@@ -32,3 +32,24 @@ Uses secure sign-up and login functionality (Supabase Auth) to register users an
 
 <h3><b>Live Viewer Count</b></h3> 
 Displays the number of users currently viewing each auction in real-time. This feature helps create a sense of urgency and competition by showing bidders how many others are interested in the same item. Viewer data updates live without requiring a page refresh.
+
+---
+
+## Motivation
+This project was built as part of COMP 426 (Modern Web Programming) to explore the challenges of creating **real-time, user-driven platforms**. We aimed to simulate a live auction environment where synchronization, performance, and user experience are critical.
+
+## Technical Architecture
+- **Frontend**: Next.js + TypeScript, styled with Tailwind and Shadcn/ui  
+- **Backend / Database**: Supabase (Auth, Database, Real-time subscriptions)  
+- **Real-time**: Websocket-based updates for bidding, notifications, and viewer counts  
+
+## My Contribution
+- Implemented the **real-time bidding logic**, ensuring bid synchronization and conflict resolution  
+- Designed and styled the **core UI components** (Auction pages, Bid modals, Notification board) using Tailwind and Shadcn/ui  
+- Structured and managed the **database schema** in Supabase for auctions, users, and bid history  
+- Collaborated with teammates through GitHub issues and pull requests, maintaining clean and testable code  
+
+## Lessons Learned
+- Learned how even small synchronization delays can significantly affect **user experience** in real-time systems  
+- Gained experience in designing scalable **database structures** that support live updates without bottlenecks  
+- Understood the importance of combining **UI design with system performance**, since usability and responsiveness directly impact immersion  
